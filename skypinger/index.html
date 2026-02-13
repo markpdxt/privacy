@@ -28,7 +28,7 @@
 </head>
 <body>
     <h1>SkyPinger Privacy Policy</h1>
-    <p class="subtitle">Effective Date: February 8, 2026</p>
+    <p class="subtitle">Effective Date: February 13, 2026</p>
 
     <h2>Overview</h2>
     <p>SkyPinger is an aircraft tracking app developed by PDXT, LLC. We respect your privacy. This policy describes what data the app accesses, how it is used, and what is shared with third parties.</p>
@@ -37,16 +37,18 @@
     <h2>Data Used on Your Device</h2>
     <p>The following data is processed locally on your device and is never sent to PDXT, LLC:</p>
     <ul>
-        <li><strong>Location (When In Use):</strong> Your device coordinates are used to query for nearby aircraft and to display your position on the map. Location data is not stored persistently.</li>
+        <li><strong>Location (When In Use / Always):</strong> Your device coordinates are used to query for nearby aircraft and to display your position on the map. If you enable background proximity alerts, the app requests "Always" location permission to continue monitoring aircraft while backgrounded. Location data is not stored persistently.</li>
         <li><strong>API Credentials:</strong> If you use the RapidAPI data source, your API key is stored in on-device preferences. It is never transmitted to PDXT, LLC.</li>
         <li><strong>App Preferences:</strong> Settings such as your selected data source, filter criteria, proximity alert configuration, map zoom level, and API usage counters are stored locally on your device.</li>
         <li><strong>Aircraft Cache:</strong> Recently fetched aircraft data is temporarily cached in memory (30 seconds) and on disk (5 minutes) to reduce network requests. Cached data is automatically deleted when it expires.</li>
     </ul>
 
     <h2>Third-Party Services</h2>
-    <p>SkyPinger connects to one of two aircraft data sources, chosen by you:</p>
+    <p>SkyPinger connects to one of three aircraft data sources, chosen by you:</p>
 
     <p><strong>RapidAPI (ADS-B Exchange):</strong> If you select the RapidAPI data source, your device's approximate latitude and longitude are sent to ADS-B Exchange via RapidAPI (<code>adsbexchange-com1.p.rapidapi.com</code>) to retrieve nearby aircraft positions. Your RapidAPI key is included for authentication. This communication is subject to <a href="https://rapidapi.com/privacy" target="_blank" rel="noopener">RapidAPI's Privacy Policy</a> and <a href="https://www.adsbexchange.com/legal-and-privacy/" target="_blank" rel="noopener">ADS-B Exchange's terms</a>. No other personal data is transmitted in these requests.</p>
+
+    <p><strong>ADSB.lol:</strong> If you select the ADSB.lol data source, your device's approximate latitude and longitude are sent to the ADSB.lol API (<code>api.adsb.lol</code>) to retrieve nearby aircraft positions. No API key or authentication is required. No personal data beyond your approximate coordinates is transmitted. This communication is subject to <a href="https://adsb.lol" target="_blank" rel="noopener">ADSB.lol's terms</a>.</p>
 
     <p><strong>Local ADS-B Receiver:</strong> If you select a local receiver, SkyPinger connects directly to a URL on your local network that you configure. No data leaves your local network and no third-party services are contacted.</p>
 

@@ -76,11 +76,11 @@
 </head>
 <body>
     <h1>TrafficScope Privacy Policy</h1>
-    <p class="subtitle">Effective Date: February 26, 2026</p>
+    <p class="subtitle">Effective Date: February 28, 2026</p>
 
     <h2>Overview</h2>
     <p>TrafficScope is an aircraft and marine vessel tracking app developed by PDXT, LLC. We respect your privacy. This policy describes what data the app accesses, how it is used, and what is shared with third parties.</p>
-    <p><strong>We do not collect, store, or transmit any personal data to PDXT, LLC.</strong> TrafficScope contains no analytics, no advertising, no telemetry, no crash reporting, and no user accounts.</p>
+    <p><strong>We do not collect, store, or transmit any personal data to PDXT, LLC servers.</strong> TrafficScope contains no advertising, no user accounts, and no telemetry beyond the anonymous analytics described below.</p>
 
     <h2>Data Used on Your Device</h2>
     <p>The following data is processed locally on your device and is never sent to PDXT, LLC:</p>
@@ -90,6 +90,15 @@
         <li><strong>App Preferences:</strong> Settings such as your selected data sources, filter criteria, proximity alert configuration, map zoom level, and API usage counters are stored locally on your device.</li>
         <li><strong>Aircraft Cache:</strong> Recently fetched aircraft data is temporarily cached in memory (30 seconds) and on disk (5 minutes) to reduce network requests. Cached data is automatically deleted when it expires.</li>
     </ul>
+
+    <h2>Analytics</h2>
+    <p>TrafficScope uses Google Firebase Analytics to collect anonymous, aggregated usage data. This helps us understand how the app is used and improve the experience. Firebase Analytics may collect:</p>
+    <ul>
+        <li><strong>Device Information:</strong> Device model, operating system version, and app version.</li>
+        <li><strong>Usage Data:</strong> App opens, screen views, and general interaction patterns.</li>
+        <li><strong>Anonymous Identifiers:</strong> A random device identifier for aggregation (not linked to your identity).</li>
+    </ul>
+    <p>Firebase Analytics does <strong>not</strong> collect your location, API keys, aircraft/vessel data, or any personally identifiable information. No advertising identifiers are used. You can learn more about how Google handles this data in <a href="https://firebase.google.com/support/privacy">Firebase's Privacy Documentation</a>.</p>
 
     <h2>Third-Party Services</h2>
 
@@ -108,20 +117,24 @@
         <li><strong>Local AIS Receiver:</strong> If you select a local AIS receiver, TrafficScope connects directly to a URL on your local network that you configure. No data leaves your local network and no third-party services are contacted.</li>
     </ul>
 
+    <h3 style="font-size: 1.05rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem;">Washington State Ferries</h3>
+    <p>TrafficScope may connect to the Washington State Department of Transportation (WSDOT) Ferries API to display ferry locations and schedules. Only publicly available ferry data is retrieved. No personal data is transmitted in these requests.</p>
+
     <h2>Data Sharing</h2>
-    <p>We do not sell, rent, share, or transfer any user data to third parties for advertising, marketing, or any other purpose. The only network communication is between your device and the aircraft or marine data sources you configure.</p>
+    <p>We do not sell, rent, share, or transfer any user data to third parties for advertising, marketing, or any other purpose. The only network communication is between your device and the data sources you configure, plus anonymous analytics as described above.</p>
 
     <h2>Data Retention</h2>
-    <p>TrafficScope does not store any data on external servers. All data resides on your device:</p>
+    <p>TrafficScope does not store any data on PDXT servers. All data resides on your device:</p>
     <ul>
         <li>Memory cache: cleared after 30 seconds</li>
         <li>Disk cache: cleared after 5 minutes</li>
         <li>Preferences and settings: persist until you delete the app</li>
         <li>API keys: stored in the device keychain until you delete the app</li>
     </ul>
+    <p>Anonymous analytics data collected by Firebase is retained according to <a href="https://firebase.google.com/support/privacy">Google's data retention policies</a>.</p>
 
     <h2>Your Rights</h2>
-    <p>Since all data remains on your device, you have full control:</p>
+    <p>Since all personal data remains on your device, you have full control:</p>
     <ul>
         <li>Revoke location permission at any time in iOS Settings</li>
         <li>Delete all stored data by deleting the app</li>
@@ -134,8 +147,8 @@
     <h2>Changes to This Policy</h2>
     <p>We may update this policy from time to time. Changes will be reflected by updating the effective date above.</p>
 
-    <h2>Contact</h2>
-    <p>If you have questions about this privacy policy, contact us at:<br>
+    <h2 id="contact">Contact</h2>
+    <p>If you have questions about this privacy policy or need support with TrafficScope, contact us at:<br>
     <strong>PDXT, LLC</strong><br>
     <a href="mailto:privacy@pdxt.com">privacy@pdxt.com</a></p>
 

@@ -28,7 +28,7 @@
 </head>
 <body>
     <h1>BorderCast Privacy Policy</h1>
-    <p class="subtitle">Effective Date: February 22, 2026</p>
+    <p class="subtitle">Effective Date: March 7, 2026</p>
 
     <h2>Overview</h2>
     <p>BorderCast is a border crossing wait time app developed by PDXT, LLC. We respect your privacy. This policy describes what data the app accesses, how it is used, and what is shared with third parties.</p>
@@ -43,10 +43,20 @@
     </ul>
     <p>This data is <strong>anonymous and aggregated</strong>. It does not include your name, email, location, or any personally identifiable information. Firebase Analytics is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</p>
 
+    <h2>Location Data</h2>
+    <p>BorderCast offers optional proximity alerts that notify you with current wait times when you are near a favorited border crossing. If you enable this feature:</p>
+    <ul>
+        <li><strong>How it works:</strong> The app uses iOS geofencing to detect when your device is within 5 km of a favorited crossing. This is handled entirely by the operating system using low-power cell/WiFi triangulation — not continuous GPS tracking.</li>
+        <li><strong>On-device only:</strong> Your location is processed locally on your device. <strong>Your location is never sent to PDXT, LLC or any third party.</strong></li>
+        <li><strong>Permission required:</strong> Location access requires your explicit permission through iOS system prompts. You can revoke access at any time in iOS Settings.</li>
+        <li><strong>No tracking:</strong> Location data is not used for analytics, advertising, profiling, or any purpose other than triggering proximity alerts.</li>
+    </ul>
+
     <h2>Data Used on Your Device</h2>
     <p>The following data is processed locally on your device and is never sent to PDXT, LLC:</p>
     <ul>
         <li><strong>App Preferences:</strong> Settings such as your selected auto-refresh interval and favorite crossings are stored locally on your device using standard iOS preferences. They are never transmitted externally.</li>
+        <li><strong>Proximity alert cooldowns:</strong> Timestamps of recent proximity alerts are stored locally to prevent repeated notifications. They are never transmitted externally.</li>
     </ul>
 
     <h2>Data Sharing</h2>
@@ -69,6 +79,7 @@
     <ul>
         <li>Delete all stored data by deleting the app</li>
         <li>Change your auto-refresh interval at any time in Settings</li>
+        <li>Disable proximity alerts or revoke location permission at any time in iOS Settings</li>
     </ul>
 
     <h2>Children's Privacy</h2>

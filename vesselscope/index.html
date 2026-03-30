@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VesselScope - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.7;
+            color: #1d1d1f;
+            background: #fff;
+            padding: 2rem 1.5rem;
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        h2 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-top: 2rem;
+            margin-bottom: 0.5rem;
+            color: #1d1d1f;
+        }
+
+        p, li {
+            font-size: 0.95rem;
+            color: #333;
+            margin-bottom: 0.75rem;
+        }
+
+        ul {
+            padding-left: 1.25rem;
+            margin-bottom: 0.75rem;
+        }
+
+        li {
+            margin-bottom: 0.35rem;
+        }
+
+        .subtitle {
+            font-size: 0.9rem;
+            color: #86868b;
+            margin-bottom: 2rem;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid #e5e5e5;
+            font-size: 0.85rem;
+            color: #86868b;
+        }
+    </style>
+</head>
+<body>
+    <h1>VesselScope Privacy Policy</h1>
+    <p class="subtitle">Effective Date: March 30, 2026</p>
+
+    <h2>Overview</h2>
+    <p>VesselScope is a marine vessel tracking app developed by PDXT, LLC. We respect your privacy. This policy describes what data the app accesses, how it is used, and what is shared with third parties.</p>
+    <p><strong>We do not collect, store, or transmit any personal data to PDXT, LLC servers.</strong> VesselScope contains no advertising, no user accounts, and no telemetry beyond the anonymous analytics described below.</p>
+
+    <h2>Data Used on Your Device</h2>
+    <p>The following data is processed locally on your device and is never sent to PDXT, LLC:</p>
+    <ul>
+        <li><strong>Location (When In Use / Always):</strong> Your device coordinates are used to query for nearby vessels and to display your position on the map. If you enable background proximity alerts, the app requests "Always" location permission to continue monitoring traffic while backgrounded. Location data is not stored persistently.</li>
+        <li><strong>API Credentials:</strong> If you use the AISStream.io marine data source, your API key is stored securely in the device keychain. It is never transmitted to PDXT, LLC.</li>
+        <li><strong>App Preferences:</strong> Settings such as your selected data sources, filter criteria, proximity alert configuration, map zoom level, and API usage counters are stored locally on your device.</li>
+        <li><strong>Vessel Cache:</strong> Recently fetched vessel data is temporarily cached in memory (30 seconds) and on disk (5 minutes) to reduce network requests. Cached data is automatically deleted when it expires.</li>
+    </ul>
+
+    <h2>Analytics</h2>
+    <p>VesselScope uses Google Firebase Analytics to collect anonymous, aggregated usage data. This helps us understand how the app is used and improve the experience. Firebase Analytics may collect:</p>
+    <ul>
+        <li><strong>Device Information:</strong> Device model, operating system version, and app version.</li>
+        <li><strong>Usage Data:</strong> App opens, screen views, and general interaction patterns.</li>
+        <li><strong>Anonymous Identifiers:</strong> A random device identifier for aggregation (not linked to your identity).</li>
+    </ul>
+    <p>Firebase Analytics does <strong>not</strong> collect your location, API keys, vessel data, or any personally identifiable information. No advertising identifiers are used. You can learn more about how Google handles this data in <a href="https://firebase.google.com/support/privacy">Firebase's Privacy Documentation</a>.</p>
+
+    <h2>Third-Party Services</h2>
+
+    <h3 style="font-size: 1.05rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem;">Marine Vessel Data Sources</h3>
+    <p>VesselScope connects to one of two marine vessel data sources, chosen by you:</p>
+    <ul>
+        <li><strong>AISStream.io:</strong> If you select the AISStream.io data source, your device's approximate geographic bounding box is sent via WebSocket to AISStream.io (<code>stream.aisstream.io</code>) to receive real-time vessel positions. Your AISStream API key is included for authentication. No other personal data is transmitted. This communication is subject to <a href="https://aisstream.io">AISStream.io's terms</a>.</li>
+        <li><strong>Local AIS Receiver:</strong> If you select a local AIS receiver, VesselScope connects directly to a URL on your local network that you configure. No data leaves your local network and no third-party services are contacted.</li>
+    </ul>
+
+    <h3 style="font-size: 1.05rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem;">Washington State Ferries</h3>
+    <p>VesselScope may connect to the Washington State Department of Transportation (WSDOT) Ferries API to display ferry locations and schedules. Only publicly available ferry data is retrieved. No personal data is transmitted in these requests.</p>
+
+    <h2>Data Sharing</h2>
+    <p>We do not sell, rent, share, or transfer any user data to third parties for advertising, marketing, or any other purpose. The only network communication is between your device and the data sources you configure, plus anonymous analytics as described above.</p>
+
+    <h2>Data Retention</h2>
+    <p>VesselScope does not store any data on PDXT servers. All data resides on your device:</p>
+    <ul>
+        <li>Memory cache: cleared after 30 seconds</li>
+        <li>Disk cache: cleared after 5 minutes</li>
+        <li>Preferences and settings: persist until you delete the app</li>
+        <li>API keys: stored in the device keychain until you delete the app</li>
+    </ul>
+    <p>Anonymous analytics data collected by Firebase is retained according to <a href="https://firebase.google.com/support/privacy">Google's data retention policies</a>.</p>
+
+    <h2>Your Rights</h2>
+    <p>Since all personal data remains on your device, you have full control:</p>
+    <ul>
+        <li>Revoke location permission at any time in iOS Settings</li>
+        <li>Delete all stored data by deleting the app</li>
+        <li>Clear the vessel cache from within the app</li>
+    </ul>
+
+    <h2>Children's Privacy</h2>
+    <p>VesselScope does not knowingly collect any personal information from children under 13. The app does not collect personal information from any user.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>We may update this policy from time to time. Changes will be reflected by updating the effective date above.</p>
+
+    <h2 id="contact">Contact</h2>
+    <p>If you have questions about this privacy policy or need support with VesselScope, contact us at:<br>
+    <strong>PDXT, LLC</strong><br>
+    <a href="mailto:privacy@pdxt.com">privacy@pdxt.com</a></p>
+
+    <div class="footer">
+        <p>&copy; 2026 PDXT, LLC. This page is hosted on <a href="https://pages.github.com">GitHub Pages</a>.</p>
+    </div>
+</body>
+</html>
